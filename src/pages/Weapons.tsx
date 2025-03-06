@@ -25,7 +25,7 @@ const weaponsData = [
   },
   {
     name: 'M4A4',
-    image: 'https://images.unsplash.com/photo-1584343492100-9c6cbde1c5dd?q=80&w=1000&auto=format&fit=crop',
+    image: 'm4a4.jpg',
     type: 'Rifle',
     stats: {
       damage: 85,
@@ -41,7 +41,7 @@ const weaponsData = [
   },
   {
     name: 'AWP',
-    image: 'https://images.unsplash.com/photo-1626714424169-d6eb407c469a?q=80&w=1000&auto=format&fit=crop',
+    image: 'diffuse_01.jpg',
     type: 'Sniper Rifle',
     stats: {
       damage: 100,
@@ -73,7 +73,7 @@ const weaponsData = [
   },
   {
     name: 'MP9',
-    image: 'https://images.unsplash.com/photo-1581420515590-cee76de451b5?q=80&w=1000&auto=format&fit=crop',
+    image: 'BT-30104-N-US_hero.png',
     type: 'SMG',
     stats: {
       damage: 50,
@@ -89,7 +89,7 @@ const weaponsData = [
   },
   {
     name: 'MAC-10',
-    image: 'https://images.unsplash.com/photo-1584454477767-97850198f206?q=80&w=1000&auto=format&fit=crop',
+    image: 'Mac10_black.png',
     type: 'SMG',
     stats: {
       damage: 55,
