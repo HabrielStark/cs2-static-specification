@@ -2,9 +2,10 @@
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { cn } from '@/lib/utils';
+import React from 'react';
 
 interface HeroProps {
-  title: string;
+  title: React.ReactNode;
   subtitle?: string;
   backgroundImage?: string;
   className?: string;
