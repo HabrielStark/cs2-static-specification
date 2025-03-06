@@ -9,7 +9,7 @@ import MapCard from '@/components/MapCard';
 const mapsData = [
   {
     name: 'Dust II',
-    image: 'https://via.placeholder.com/600x400?text=Dust+II',
+    image: 'https://upload.wikimedia.org/wikipedia/ru/thumb/6/6f/Dust_II_%28CS-GO%29.jpg/800px-Dust_II_%28CS-GO%29.jpg',
     description: 'The most iconic map in Counter-Strike history. Features a simple layout with a mid area connecting to both bombsites.',
     difficulty: 'Beginner' as const,
     competitivePool: true,
@@ -17,7 +17,7 @@ const mapsData = [
   },
   {
     name: 'Mirage',
-    image: 'https://via.placeholder.com/600x400?text=Mirage',
+    image: 'https://static.wikia.nocookie.net/cswikia/images/f/f5/De_mirage_cs2.png/revision/latest?cb=20230807124319',
     description: 'A balanced map with multiple pathways to bombsites. Features a distinctive middle area that provides various tactical options.',
     difficulty: 'Intermediate' as const,
     competitivePool: true,
@@ -25,7 +25,7 @@ const mapsData = [
   },
   {
     name: 'Inferno',
-    image: 'https://via.placeholder.com/600x400?text=Inferno',
+    image: 'https://as.com/esports/imagenes/2016/10/11/counter_strike/1476199602_578798_1476199907_noticia_normal.jpg',
     description: 'Narrow corridors and choke points define this map. Requires strong teamwork and utility usage.',
     difficulty: 'Intermediate' as const,
     competitivePool: true,
@@ -33,7 +33,7 @@ const mapsData = [
   },
   {
     name: 'Nuke',
-    image: 'https://via.placeholder.com/600x400?text=Nuke',
+    image: 'https://escorenews.com/media/news/pic-20230630-1536x864-2159679631.png',
     description: 'Unique vertical layout with bombsites stacked on top of each other. One of the most complex maps in the pool.',
     difficulty: 'Advanced' as const,
     competitivePool: true,
@@ -41,7 +41,7 @@ const mapsData = [
   },
   {
     name: 'Vertigo',
-    image: 'https://via.placeholder.com/600x400?text=Vertigo',
+    image: 'https://www.exitlag.com/blog/wp-content/uploads/2024/07/cs2-vertigo.webp',
     description: 'Set on a skyscraper under construction. Features unique elevation changes and tight angles.',
     difficulty: 'Advanced' as const,
     competitivePool: true,
@@ -49,7 +49,7 @@ const mapsData = [
   },
   {
     name: 'Ancient',
-    image: 'https://via.placeholder.com/600x400?text=Ancient',
+    image: 'https://blitz-cdn.blitz.gg/blitz/cs2/bombsites/ancient_b_site.webp',
     description: 'Newer map to the competitive pool. Features temple-like aesthetics with interconnected paths.',
     difficulty: 'Intermediate' as const,
     competitivePool: true,
