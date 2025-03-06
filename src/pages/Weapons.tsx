@@ -5,11 +5,11 @@ import Footer from '@/components/Footer';
 import Hero from '@/components/Hero';
 import WeaponCard from '@/components/WeaponCard';
 
-// Mock data for weapons
+// Updated weaponsData with realistic weapon images
 const weaponsData = [
   {
     name: 'AK-47',
-    image: 'https://via.placeholder.com/300x150?text=AK-47',
+    image: 'https://images.unsplash.com/photo-1596727147705-61a532a659bd?q=80&w=1169&auto=format&fit=crop',
     type: 'Rifle',
     stats: {
       damage: 95,
@@ -25,7 +25,7 @@ const weaponsData = [
   },
   {
     name: 'M4A4',
-    image: 'https://via.placeholder.com/300x150?text=M4A4',
+    image: 'https://images.unsplash.com/photo-1584343492100-9c6cbde1c5dd?q=80&w=1000&auto=format&fit=crop',
     type: 'Rifle',
     stats: {
       damage: 85,
@@ -41,7 +41,7 @@ const weaponsData = [
   },
   {
     name: 'AWP',
-    image: 'https://via.placeholder.com/300x150?text=AWP',
+    image: 'https://images.unsplash.com/photo-1626714424169-d6eb407c469a?q=80&w=1000&auto=format&fit=crop',
     type: 'Sniper Rifle',
     stats: {
       damage: 100,
@@ -57,7 +57,7 @@ const weaponsData = [
   },
   {
     name: 'Desert Eagle',
-    image: 'https://via.placeholder.com/300x150?text=Desert+Eagle',
+    image: 'https://images.unsplash.com/photo-1595590424283-b8f17842773f?q=80&w=1000&auto=format&fit=crop',
     type: 'Pistol',
     stats: {
       damage: 85,
@@ -73,7 +73,7 @@ const weaponsData = [
   },
   {
     name: 'MP9',
-    image: 'https://via.placeholder.com/300x150?text=MP9',
+    image: 'https://images.unsplash.com/photo-1581420515590-cee76de451b5?q=80&w=1000&auto=format&fit=crop',
     type: 'SMG',
     stats: {
       damage: 50,
@@ -89,7 +89,7 @@ const weaponsData = [
   },
   {
     name: 'MAC-10',
-    image: 'https://via.placeholder.com/300x150?text=MAC-10',
+    image: 'https://images.unsplash.com/photo-1584454477767-97850198f206?q=80&w=1000&auto=format&fit=crop',
     type: 'SMG',
     stats: {
       damage: 55,
