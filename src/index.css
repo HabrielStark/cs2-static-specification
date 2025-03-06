@@ -61,6 +61,10 @@
   html {
     @apply scroll-smooth;
   }
+  
+  ::selection {
+    @apply bg-cs2-yellow/30 text-white;
+  }
 }
 
 @layer utilities {
@@ -95,6 +99,54 @@
   .link-hover {
     @apply relative after:absolute after:bg-cs2-yellow after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:transition-all after:duration-300 hover:after:w-full;
   }
+  
+  .button-hover {
+    @apply relative overflow-hidden z-10 before:absolute before:bg-white/10 before:inset-0 before:-z-10 before:translate-y-full before:hover:translate-y-0 before:transition-transform before:duration-300;
+  }
+  
+  .pulse-slow {
+    animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  .reveal-right {
+    @apply opacity-0 translate-x-8 transition-all duration-700 ease-out;
+  }
+  
+  .reveal-right.is-visible {
+    @apply opacity-100 translate-x-0;
+  }
+  
+  .reveal-left {
+    @apply opacity-0 -translate-x-8 transition-all duration-700 ease-out;
+  }
+  
+  .reveal-left.is-visible {
+    @apply opacity-100 translate-x-0;
+  }
+  
+  .scale-in {
+    @apply opacity-0 scale-95 transition-all duration-500 ease-out;
+  }
+  
+  .scale-in.is-visible {
+    @apply opacity-100 scale-100;
+  }
+  
+  .clip-path-slant {
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  }
+  
+  .text-shadow-sm {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .text-shadow-lg {
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  }
 }
 
 .page-transition-enter {
@@ -117,4 +169,66 @@
   opacity: 0;
   transform: translateY(-20px);
   transition: opacity 400ms, transform 400ms;
+}
+
+/* Designer-focused animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, 
+    rgba(255,215,0,0) 25%, 
+    rgba(255,215,0,0.2) 50%, 
+    rgba(255,215,0,0) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 3s infinite;
+}
+
+@keyframes pulse-border {
+  0% { border-color: rgba(255, 215, 0, 0.3); }
+  50% { border-color: rgba(255, 215, 0, 0.8); }
+  100% { border-color: rgba(255, 215, 0, 0.3); }
+}
+
+.animate-pulse-border {
+  animation: pulse-border 2s infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+.animate-typing {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3.5s steps(40, end);
+}
+
+.backdrop-blur-hover {
+  @apply transition-all duration-300;
+}
+
+.backdrop-blur-hover:hover {
+  @apply backdrop-blur-md;
+}
+
+.mesh-gradient {
+  background-color: hsla(0, 0%, 7%, 1);
+  background-image:
+    radial-gradient(at 80% 0%, hsla(45, 100%, 50%, 0.15) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, hsla(45, 100%, 50%, 0.1) 0px, transparent 50%);
 }
